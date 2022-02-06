@@ -105,6 +105,7 @@ console.log("a menor palavra é: " + lowest);
 
 let primo = 0;
 let isPrime;
+var highest;
 
 for (let index = 0; index <= 50; index += 1){
     if(index === 0 || index ===1){
@@ -119,6 +120,8 @@ for (let index = 0; index <= 50; index += 1){
     }
     if(isPrime){
         primo += 1;
+        highest = index;
     }
 }
-console.log(primo);
+console.log("quantidade de números primos: " + primo);
+console.log("maior número primo do intervalo: " + highest);

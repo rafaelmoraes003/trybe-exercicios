@@ -60,6 +60,10 @@
             let correctionText = document.getElementsByClassName("title");
             correctionText[0].innerText = "Exercício 5.1 - JavaScript";
         // 5- Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+            let toUppercase = document.getElementsByTagName("p");
+            for(let index = 0; index < toUppercase.length; index += 1){
+                toUppercase[index].style.textTransform = "uppercase"
+            }
         // 6- Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         
     </script>

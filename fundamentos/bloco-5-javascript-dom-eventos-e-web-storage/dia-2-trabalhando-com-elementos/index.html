@@ -87,13 +87,14 @@
     image.className = "small-image";
     secao2.appendChild(image);
     // Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
-    let lista = document.createElement("ul");
-    secao3.appendChild(lista);
-    let listItems = document.createElement("li");
-    let valores = ["um","dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"];
-    for(let index = 0; index < valores.length; index += 1){
-      listItems.append(valores[index]);
-      lista.appendChild(listItems);
+    let list = document.createElement('ul');
+    secao3.appendChild(list);
+    const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis','Sete', 'Oito', 'Nove', 'Dez'];
+
+    for (let num in arrayNumbers) {
+      let listItems = document.createElement('li');
+      listItems.innerHTML = arrayNumbers[num];
+      list.appendChild(listItems);
     }
     
     // Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
@@ -119,7 +120,8 @@
     // Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
     secao.parentElement.style.background = "green";
     // Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
-
+    list.lastChild.remove();
+    list.lastChild.remove();
 
     </script>
   </body>

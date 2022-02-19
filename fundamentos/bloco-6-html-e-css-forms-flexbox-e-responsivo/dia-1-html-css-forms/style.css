@@ -2,8 +2,20 @@ body{
     background-color: rgb(206, 212, 212);
 }
 
+header{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 h1{
     text-align: center;
+    background-color: rgb(228, 235, 224);
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 50px;
+
 }
 
 main {

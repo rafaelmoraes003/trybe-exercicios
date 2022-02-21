@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(206, 212, 212);
+}
+
+header{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h1{
+    text-align: center;
+    background-color: rgb(228, 235, 224);
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 50px;
+
+}
+
+main {
+    background-color: rgb(228, 235, 224);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.line-content{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+}
+
+input, textarea{
+    border-radius: 3px;
+}

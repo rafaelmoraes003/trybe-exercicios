@@ -41,4 +41,4 @@ window.onload = function(){
   clearButton.addEventListener("click", clearAll);
   allowImage.addEventListener("change", allowImageFunction);
   submitBtn.addEventListener("click", validationInput);
-}
+};

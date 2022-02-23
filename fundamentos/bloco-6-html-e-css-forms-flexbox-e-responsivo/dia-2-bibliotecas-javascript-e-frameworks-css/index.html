@@ -136,7 +136,12 @@
             rule: 'required',
             errorMessage: 'You should allow the use of your image.',
             }
-        ]); 
+        ]).onSuccess((event) => {
+            let form = document.querySelector("#form")
+            form.submit();
+            console.log('Validation passes and form submitted', event);
+            alert('Validation passes and form submitted', event);
+            }); 
     </script>
 </body> 
 </html>

@@ -24,7 +24,8 @@
   .menu-container {
     display: flex;
     flex-basis: 500px;
-    order: 1;
+    order: 1; 
+    flex-grow: 1;
   }
   
   .menu-container ul {

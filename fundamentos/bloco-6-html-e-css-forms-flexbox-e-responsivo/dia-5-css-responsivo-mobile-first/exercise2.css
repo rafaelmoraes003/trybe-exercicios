@@ -1,0 +1,51 @@
+html {
+    box-sizing: border-box;
+  }
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 10px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.aside-section{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+h1{
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+article p{
+    margin-bottom: 20px
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+footer h3{
+    margin-top: 15px;
+}
+
+footer p{
+    margin: 5px;
+}
+
+  
+
+

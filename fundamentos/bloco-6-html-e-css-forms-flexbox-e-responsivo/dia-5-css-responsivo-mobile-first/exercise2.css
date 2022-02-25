@@ -1,10 +1,14 @@
 html {
     box-sizing: border-box;
-  }
+}
   
 *, *:before, *:after {
     box-sizing: inherit;
     margin: 10px;
+}
+
+body{
+    background-color: rgb(212, 216, 221);
 }
 
 header{
@@ -12,6 +16,12 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 5px;
+    font-size: 20px;
+    color: brown;
+}
+
+header p{
+    font-size: 30px;
 }
 
 header nav ul{
@@ -36,6 +46,7 @@ article p{
 footer{
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
 }
 
 footer h3{
@@ -46,6 +57,99 @@ footer p{
     margin: 5px;
 }
 
+@media screen and (min-width: 601px) and (max-width: 768px){
+    body{
+        background-color: rgb(186, 216, 226);
+    }
+
+    header{
+        color:rgb(84, 26, 139);
+        font-size: 30px;
+    }
+
+    header nav ul{
+        border: 1px solid black;
+        padding: 0 10px
+    }
+
+    header nav ul li{
+        list-style: none;
+    }
+
+    h1{
+        font-size: 40px;
+
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    section aside ul li{
+        font-size: 25px;
+    }
+
+    article p{
+        font-size: 25px;
+        margin: 20px 40px;
+    }
+
+    footer h3{
+        font-size: 30px;
+    }
+
+    footer p{
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 769px){
+    body{
+        font-size: 40px;
+        background-color: lightseagreen;
+    }
+
+    header{
+        color: chartreuse
+    }
+
+    header p{
+        font-size: 35px;
+        text-decoration: underline;
+    }
+    
+    header nav ul li{
+        font-size: 35px;
+        list-style: none;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 35px;
+    }
+
+    section aside ul li{
+        font-size: 30px;
+    }
+
+    article p{
+        font-size: 30px;
+        margin: 25px 45px;
+        max-width: 1200px;
+    }
+
+    footer h3{
+        font-size: 30px;
+    }
+
+    footer p{
+        font-size: 25px;
+        margin: 10px 25px;
+    }
+}
   
 
 

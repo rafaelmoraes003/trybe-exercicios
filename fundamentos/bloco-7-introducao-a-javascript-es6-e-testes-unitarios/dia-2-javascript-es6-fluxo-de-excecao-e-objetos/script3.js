@@ -109,14 +109,14 @@ const createReport = (object, teacher) => {
   const values = Object.values(object);
   for(let value in values){
     if(values[value].professor === teacher){
-      lessons.push(values[value].materia)
+      lessons.push(values[value].materia);
       students += values[value].numeroEstudantes;
     }
   }
   const prof = {professor: teacher};
-  const materias = {aulas: lessons}
-  const alunos = {estudantes: students}
+  const materias = {aulas: lessons};
+  const alunos = {estudantes: students};
   const report = Object.assign({}, prof, materias, alunos);
-  console.log(report)
+  console.log(report);
 }
- createReport(allLessons, "Maria Clara")
+ createReport(allLessons, "Maria Clara");

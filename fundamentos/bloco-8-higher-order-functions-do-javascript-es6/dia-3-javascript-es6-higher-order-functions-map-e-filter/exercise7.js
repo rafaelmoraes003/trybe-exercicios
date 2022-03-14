@@ -65,7 +65,9 @@ const books = [
 // Dica: cada inicial termina com um ponto.
 
 const authorWith3DotsOnName = (array) => {
-  return books.filter((book) => ( book.author.name[1].endsWith('.') && book.author.name[4].endsWith('.') && book.author.name[7].endsWith('.')))[0].name;
+  return books.filter((book) => ( book.author.name[1].endsWith('.')
+   && book.author.name[4].endsWith('.')
+    && book.author.name[7].endsWith('.')))[0].name;
 }
 
 console.log(authorWith3DotsOnName(books));

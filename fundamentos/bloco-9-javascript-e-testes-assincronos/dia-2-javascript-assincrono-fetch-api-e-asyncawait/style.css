@@ -1,0 +1,21 @@
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  height: 400px;
+  margin: 0 30%;
+  margin-top: 30px;
+  background-color: rgb(210, 230, 31);
+}
+
+div:hover {
+  height: 450px;
+  margin: 0 20%;
+  transition: 2s;
+}
+
+body {
+  background-color: rgb(75, 72, 72);
+}

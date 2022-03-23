@@ -18,7 +18,7 @@ const setCoins = async () => {
   const cryptoList = document.querySelector('#crypto-list');
 
   myCryptos.forEach((elemento, index) => {
-    if (index < 10) {
+    if (index < 20) {
       const newLi = document.createElement('li');
       const fixedPrice = parseFloat(elemento.priceUsd).toFixed(2)
       newLi.innerText = `${elemento.name} (${elemento.symbol}): ${fixedPrice}`;

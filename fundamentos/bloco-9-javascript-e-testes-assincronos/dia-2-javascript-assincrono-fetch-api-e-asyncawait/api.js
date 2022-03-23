@@ -14,12 +14,16 @@ const fetchCoins = async () => {
 
 const setCoins = async () => {
   const myCryptos = await fetchCoins();
+
   const cryptoList = document.querySelector('#crypto-list');
 
-  myCryptos.filter((elemento, index) => index < 10).forEach((coin) => {
-    const newLi = document.createElement('li');
-    newLi.innerText = `${coin.name} (${coin.symbol}: ${coin.priceUsd})`;
-    cryptoList.appendChild(newLi);
+  myCryptos.forEach((elemento, index) => {
+    if (index < 10) {
+      const newLi = document.createElement('li');
+      const fixedPrice = parseFloat(elemento.priceUsd).toFixed(2)
+      newLi.innerText = `${elemento.name} (${elemento.symbol}): ${fixedPrice}`;
+      cryptoList.appendChild(newLi);
+    }
   })
 }
 

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
+    <script defer src="src/script.js"></script>
+    <link rel="stylesheet" href="exercise_one.css">
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+
+      #container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      button {
+        height: 50px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <p>Color: <span id="value">white</span></p>
+      <button id="previous">Previous color</button>
+      <button id="next">Next color</button>
+      <button id="random">Random Color</button>
+    </div>
+    <script>
+
+      const ESTADO_INICIAL = {
+        colors: ['white', 'black', 'red', 'green', 'blue', 'yellow'],
+        index: 0,
+      };
+
+      const reducer = (state = ESTADO_INICIAL, action) => {
+        switch(action.type) {
+          case 'NEXT_COLOR':
+            return {
+              ...state,
+              index: state.index < state.colors.length - 1 ? state.index += 1 : state.index = 0,
+            }
+          case 'PREVIOUS_COLOR':
+            return {
+              ...state,
+              index: state.index <= 0 ? state.index = state.colors.length - 1 : state.index -= 1,
+            }
+          case 'RANDOM_COLOR':
+            return {
+              ...state,
+              color: state.colors.push(generateRandomColor()),
+              index: state.colors.length - 1,
+            }
+          default:
+            return state;
+        }
+      }
+    
+      const store = Redux.createStore(reducer);
+
+      const actionCreatorNextColor = () => {
+        store.dispatch({ type:  'NEXT_COLOR' });
+      }
+
+      const actionCreatorPrevColor = () => {
+        store.dispatch({ type: 'PREVIOUS_COLOR' });
+      }
+
+      const actionRandomColor = () => {
+        store.dispatch({ type: 'RANDOM_COLOR' })
+      }
+
+      const generateRandomColor = () => {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        const rgb = `rgb(${r}, ${g}, ${b})`;
+        return rgb;
+      }
+
+      const prevBtn = document.querySelector('#previous');
+      const nextBtn = document.querySelector('#next');
+      const randomBtn = document.querySelector('#random');
+
+      prevBtn.addEventListener('click', actionCreatorPrevColor);
+      nextBtn.addEventListener('click', actionCreatorNextColor);
+      randomBtn.addEventListener('click', actionRandomColor);
+
+      store.subscribe(() => {
+        const newState = store.getState();
+        const span = document.querySelector('span');
+        const container = document.querySelector('#container');
+        const p = document.querySelector('p');
+        span.innerText = ESTADO_INICIAL.colors[newState.index];
+        container.style.backgroundColor = ESTADO_INICIAL.colors[newState.index];
+        if (container.style.backgroundColor === 'black') {
+            p.className = 'span_white'
+        } else {
+            p.classList.remove('span_white')
+        }
+        console.log(newState)
+      })
+
+  </script>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 # BACK-END
 
-Neste módulo são vistos:
+Neste módulo é visto:
 
 - Configuração e conteinerização de aplicações utilizando o `Docker`
 - Utilização de banco de dados relacionais com o `MySQL`

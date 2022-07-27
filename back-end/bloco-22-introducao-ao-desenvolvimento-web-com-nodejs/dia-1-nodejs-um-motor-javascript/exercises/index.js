@@ -4,6 +4,8 @@ const scripts = [
     { name: 'imc', path: './imc' },
     { name: 'valocidade média', path: './velocidade' },
     { name: 'sorteio', path: './sorteio' },
+    { name: 'fatorial', path: './fatorial' },
+    { name: 'sequência de fibonacci', path: './fibonacci' }
 ];
 
 const questions = scripts.map((script, index) => {

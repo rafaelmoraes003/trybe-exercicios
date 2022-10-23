@@ -231,13 +231,13 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 29.3: Operadores de consulta
 - [ ] 29.4: Updates Simples
 - [ ] 29.5: Updates Complexos - Arrays
-- [ ] 29.6: [Projeto - Commerce]()
+- [ ] 29.6: [Projeto - Commerce](https://github.com/rafaelmoraes003/commerce-mongodb)
 
 #### Bloco 30: MongoDB com Node.js e POO
 
 - [ ] 30.1: MongoDB e arquitetura MSC
 - [ ] 30.2: MongoDB e POO
-- [ ] 30.3: [Projeto - Car Shop]()
+- [ ] 30.3: [Projeto - Car Shop](https://github.com/rafaelmoraes003/car-shop)
 
 #### Bloco 31: Projeto - App de Delivery
 

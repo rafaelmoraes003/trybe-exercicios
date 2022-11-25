@@ -1,5 +1,5 @@
 def append_each_letter_of_the_word_in_a_list(word):
-  list = []
+  list = list()
 
   for i in word:
     list.append(i)

@@ -241,7 +241,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 #### Bloco 31: Projeto - App de Delivery
 
-- [ ] 31.1: [Projeto - App de Delivery]()
+- [ ] 31.1: [Projeto - App de Delivery](https://github.com/rafaelmoraes003/trybeer-delivery-app)
 
 #### Bloco 33: MasterClass - VPS, CI/CD
 
@@ -258,7 +258,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 33.1: Aprendendo Python
 - [ ] 33.2: Entrada e Saída de Dados
 - [ ] 33.3: Testes
-- [ ] 33.4: [Projeto - Job Insights]()
+- [ ] 33.4: [Projeto - Job Insights](https://github.com/rafaelmoraes003/job-insights)
 
 #### Bloco 34: Padrões de Projeto
 

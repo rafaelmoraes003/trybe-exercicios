@@ -39,7 +39,7 @@ class Circle(GeometricFigure):
         self.radius = radius
 
     def area(self):
-        return super().PI * (self.radius ** 2)
+        return 3.14 * (self.radius ** 2)
 
     def perimeter(self):
         return 2 * 3.14 * self.radius 

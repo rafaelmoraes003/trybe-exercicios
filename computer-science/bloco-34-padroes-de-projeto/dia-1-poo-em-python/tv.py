@@ -1,53 +1,52 @@
 class TV:
-
+    
     @property
     def volume(self):
         return self.__volume
-
-    @volume.setter
-    def volume(self, new_volume):
-        if 0 <= new_volume <= 99:
-            self.__volume = new_volume
-        else: raise ValueError(f"Invalid volume {new_volume}, not in [0, 99]")
-
+        
     @property
-    def channel(self):
-        return self.__channel
-
-    @channel.setter
-    def channel(self, new_channel):
-        if 1 <= new_channel <= 99:
-            self.__channel = new_channel
-        else: raise ValueError(f"Invalid channel {new_channel}, not in [1, 99]")
-
-    def __init__(self, size):
+    def canal(self):
+        return self.__canal
+    
+    @volume.setter
+    def volume(self, valor):
+        if 0 <= valor <= 99:
+            self.__volume = valor
+        else: raise ValueError(f"volume {valor} não está entre 0 e 99")
+        
+    @canal.setter
+    def canal(self, valor):
+        if 1 <= valor <= 99:
+            self.__canal = valor
+        else: raise ValueError(f"canal {valor} não está entre 1 e 99")
+    
+    def __init__(self, tamanho):
         self.__volume = 50
-        self.__channel = 1
-        self.__size = size
-        self.__turned_on = False
+        self.__canal = 1 
+        self.__tamanho = tamanho
+        self.__ligada = False
 
-    def increase_volume(self):
+    def aumentar_volume(self):
         self.volume += 1
 
-    def decrease_volume(self):
+    def diminuir_volume(self):
         self.volume -= 1
 
-    def change_channel(self, new_channel):
-        self.channel = new_channel
+    def modificar_canal(self, valor):
+        self.canal = valor
 
-    def turn_on_turn_down(self):
-        self.__turned_on = not self.__turned_on
-
+    def ligar_desligar(self):
+        self.__ligada = not self.__ligada
+        
     def __str__(self):
         return f"""
-            volume: {self.volume}
-            channel: {self.channel}
-            size: {self.__size}
-            turned_on: {self.__turned_on}
+            volume: {self.__volume},
+            canal: {self.__canal},
+            tamanho: {self.__tamanho},
+            ligada: {self.__ligada}
         """
+        
 
-tv = TV(60)
-tv.turn_on_turn_down()
-tv.change_channel(99)
-tv.increase_volume()
+tv = TV(50)
+tv.modificar_canal(102)
 print(tv)

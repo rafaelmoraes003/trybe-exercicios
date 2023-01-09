@@ -1,25 +1,30 @@
 from abc import ABC, abstractmethod
 
 class ImpostoStrategy(ABC):
+    @classmethod
     @abstractmethod
-    def taxa(self, valor):
+    def taxa(cls, valor):
         raise NotImplementedError()
 
 
 class ISS(ImpostoStrategy):
-    def taxa(self, valor):
+    @classmethod
+    def taxa(cls, valor):
         return 0.1 * valor
 
 class ICMS(ImpostoStrategy):
-    def taxa(self, valor):
+    @classmethod
+    def taxa(cls, valor):
         return 0.06 * valor
 
 class PIS(ImpostoStrategy):
-    def taxa(self, valor):
+    @classmethod
+    def taxa(cls, valor):
         return 0.0065 * valor
 
 class COFINS(ImpostoStrategy):
-    def taxa(self, valor):
+    @classmethod
+    def taxa(cls, valor):
         return 0.03 * valor
 
 class Orcamento:

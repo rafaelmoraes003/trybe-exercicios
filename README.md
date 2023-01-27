@@ -271,14 +271,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [ ] 35.1: Arquitetura de redes, ferramentas e segurança
 - [ ] 35.2: Raspagem de Dados
-- [ ] 35.3: [Projeto - Tech News]()
+- [ ] 35.3: [Projeto - Tech News](https://github.com/rafaelmoraes003/tech-news)
 
 #### Bloco 36: Algoritmos
 
 - [ ] 36.1: Complexidade de Algoritmos
 - [ ] 36.2: Recursividade e Estratégias para solução de problemas
 - [ ] 36.3: Algoritmos de ordenação e busca
-- [ ] 36.4: [Projeto - Algoritmos]()
+- [ ] 36.4: [Projeto - Algoritmos](https://github.com/rafaelmoraes003/algorithms)
 
 #### Bloco 37: Estrutura de Dados I: Array, Listas, Filas e Pilhas
 

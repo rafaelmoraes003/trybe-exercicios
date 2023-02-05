@@ -1,5 +1,5 @@
 class Stack:
-    def __init__(self, stack_limit):
+    def __init__(self, stack_limit = 10):
         self._data = list()
         self.stack_limit = stack_limit
 

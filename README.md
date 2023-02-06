@@ -286,7 +286,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 37.2: Arrays
 - [ ] 37.3: Nó e Listas Encadeadas
 - [ ] 37.4: Pilhas e Filas
-- [ ] 37.5: [Projeto - TING - Trybe Is Not Google]()
+- [ ] 37.5: [Projeto - TING - Trybe Is Not Google](https://github.com/rafaelmoraes003/trybe-is-not-google)
 
 #### Bloco 38: Estrutura de Dados II: Hashmaps e Sets
 

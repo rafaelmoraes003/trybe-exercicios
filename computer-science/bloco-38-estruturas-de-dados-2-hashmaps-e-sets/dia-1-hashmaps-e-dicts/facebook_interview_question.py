@@ -17,13 +17,14 @@ def facebook(words: list, string: str):
     possible_words_length = 0
 
     for word in words:
-        string_letters_helper = string_letters
-        should_add = False
+        string_letters_helper = dict(string_letters)
+        should_add = True
+
         for letter in word:
             if letter in string_letters_helper and string_letters_helper[letter] > 0:
                 string_letters_helper[letter] -= 1
-                should_add = True
             else:
+                should_add = False
                 break
 
         if should_add:

@@ -24,7 +24,6 @@ def facebook(words: list, string: str):
                 string_letters_helper[letter] -= 1
                 should_add = True
             else:
-                should_add = False
                 break
 
         if should_add:

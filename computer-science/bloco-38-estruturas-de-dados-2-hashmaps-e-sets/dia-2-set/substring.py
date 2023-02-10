@@ -1,13 +1,14 @@
 def substring(string):
     biggest = 0
-    for index, _ in enumerate(string):
-        substr = set()
-        for letter in string[index:]:
-            if letter in substr:
+    
+    for i in range(len(string)):
+        biggest_substring = set()
+        for j in range(i, len(string)):
+            if string[j] in biggest_substring:
                 break
-            substr.add(letter)
-        if len(substr) > biggest:
-            biggest = len(substr)
+            biggest_substring.add(string[j])
+        if len(biggest_substring) > biggest:
+            biggest = len(biggest_substring)
      
     return biggest
 

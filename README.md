@@ -292,4 +292,4 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [ ] 38.1: Hashmap e Dict
 - [ ] 38.2: Set
-- [ ] 38.3: [Projeto - Restaurant Orders]()
+- [ ] 38.3: [Projeto - Restaurant Orders](https://github.com/rafaelmoraes003/restaurant-orders)
